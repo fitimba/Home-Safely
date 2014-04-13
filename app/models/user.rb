@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   end
 
   def contact_numbers
-  	[@user.contact_1_number, @user.contact_2_number, @user.contact_3_number]
+  	[contact_1_number, contact_2_number, contact_3_number].select { |s| !s.blank? }
   end
  
   attr_accessible :email,

@@ -22,4 +22,12 @@ class UsersController < ApplicationController
 		redirect_to new_contact_path
 	end
 
+	def update
+		@user = User.find(1)
+		@user.latitude = params[:latitude]
+		@user.longitude = params[:longitude]
+		@user.save
+		render json: { success: true }
+	end
+
 end

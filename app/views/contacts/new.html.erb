@@ -1,65 +1,74 @@
-<h1>Home Safely</h1>
+<div class="col-md-6 col-md-offset-3">
+<div class="panel panel-default">
+<div class="panel-heading" >
+	<h1>Home Safely</h1>
+</div>
+<div class="panel-body">
 
 <h3>Update your contacts:</h3>
 <form action="http://localhost:3000/contacts"
 method="post"
 target="hidden_iframe" onsubmit="submitted=true;">
 
-<table>
-<col width="100">
-<col width="160">
-<col width="160">
-<thead>
-		<tr>
-			<th></th>
-			<th>Contact Name</th>
-			<th>Contact phone number</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-				Contact 1
-			</td>
-			<td> 
-				<label for="contact_1_name"></label>
-    			<input id="contact_1_name" type="text" name="contact_1_name" size="40" placeholder="Enter name of contact 1">
-    		</td>
-			<td>
-				<label for="contact_1_number"></label>
-    			<input id="contact_1_number" type="text" name="contact_1_number" size="40" placeholder="Enter phone number of contact 1">
-    		</td>
-		</tr>
-		<tr>
-			<td>
-				Contact 2
-			</td>
-			<td> 
-				<label for="contact_2_name"></label>
-    			<input id="contact_2_name" type="text" name="contact_2_name" size="40" placeholder="Enter name of contact 2">
-    		</td>
-			<td>
-				<label for="contact_2_number"></label>
-    			<input id="contact_2_number" type="text" name="contact_2_number" size="40" placeholder="Enter phone number of contact 2">
-    		</td>
-		</tr>
-		<tr>
-			<td>
-				Contact 3
-			</td>
-			<td> 
-				<label for="contact_3_name"></label>
-    			<input id="contact_3_name" type="text" name="contact_3_name" size="40" placeholder="Enter name of contact 3">
-    		</td>
-			<td>
-				<label for="contact_3_number"></label>
-    			<input id="contact_3_number" type="text" name="contact_3_number" size="40" placeholder="Enter phone number of contact 3">
-    		</td>
-		</tr>
-	</tbody>
-</table>
+
+<div class="row">
+	<div class="col-md-3">
+		<br/>
+	</div>
+	<div class="col-md-5">
+		<h4> Contact Name </h4>
+	</div>
+	<div class="col-md-4">
+		<h4>Contact Phone Number</h4>
+	</div>
+</div>	
+<div class="row">
+	<div class="col-md-3">
+		<h4>Contact 1</h4>
+	</div>
+	<div class="col-md-5">
+		<label for="contact_1_name"></label>
+   		<input id="contact_1_name" type="text" name="contact_1_name" placeholder="Enter name of contact 1">
+   	</div>
+   	<div class="col-md-4">
+   		<label for="contact_1_number"></label>
+    	<input id="contact_1_number" type="text" name="contact_1_number" placeholder="Enter phone number of contact 1">
+    </div>
+</div>
+ <div class="row">
+	<div class="col-md-3">
+		<h4>Contact 2</h4>
+	</div>
+	<div class="col-md-5">
+		<label for="contact_2_name"></label>
+   		<input id="contact_2_name" type="text" name="contact_2_name"  placeholder="Enter name of contact 2">
+   	</div>
+   	<div class="col-md-4">
+   		<label for="contact_2_number"></label>
+  		<input id="contact_2_number" type="text" name="contact_2_number" placeholder="Enter phone number of contact 2">
+    </div>
+   </div>
+ <div class="row">
+	<div class="col-md-3">
+		<h4>Contact 3</h4>
+	</div>
+	<div class="col-md-5">
+		<label for="contact_3_name"></label>
+   		<input id="contact_3_name" type="text" name="contact_3_name"  placeholder="Enter name of contact 3">
+   	</div>
+   	<div class="col-md-4">
+   		<label for="contact_3_number"></label>
+    			<input id="contact_3_number" type="text" name="contact_3_number"  placeholder="Enter phone number of contact 3">
+    </div>
+</div>
+
+
+
     	<br />
         <div class="col-sm-offset-2 col-sm-10">
                 <Input type="Submit" class="btn btn-default" value="Update and Add Location">
         </div>
 </form>
+</div>
+</div>
+</div>

@@ -1,3 +1,22 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	padding-top:50px;
+	background-image:url("http://31.media.tumblr.com/2bd5173cc838a013cc38d01bdb39ec84/tumblr_myp92oDsGX1st5lhmo1_1280.jpg");
+}
+
+h1{
+	font-family: Papyrus, fantasy;
+	text-align:center;
+}
+
+h2{
+	font-family: Papyrus, fantasy;
+	text-align:right;
+}
+
+h3{
+	text-align:center;
+font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+.panel-body {
+	background-color:rgba(200,245,245,0);
+}

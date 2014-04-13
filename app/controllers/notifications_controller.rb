@@ -5,12 +5,12 @@ class NotificationsController < ApplicationController
 
 	def create
 		@client = Twilio::REST::Client.new TWILIO_SID, TWILIO_AUTH
-		@user = User.find(session[:user_id])
+		@user = User.find(1)
 		@user.contact_numbers.each do |number|
-			if @user.home?
-				body = "#{@user.name} got home safely"
-			else
+			if params[:lost]
 				body = "#{@user.name} still isn't home. Maybe you should check up on them."
+			else
+				body = "#{@user.name} got home safely"
 			end
 
 			@client.account.messages.create(
@@ -19,5 +19,6 @@ class NotificationsController < ApplicationController
   				:body => body
 			)
 		end
+		render json: {success: true }
 	end
 end

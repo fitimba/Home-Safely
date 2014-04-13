@@ -3,6 +3,9 @@ Homesafe::Application.routes.draw do
 
   resources :users
   resources :contacts
-  resources :location
+  resources :locations
+
+  post 'notifications' => 'notifications#create'
+  get 'going_home' => 'locations#home'
 end
 

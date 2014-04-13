@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+                <link href="bootstrap/css/bootstrap.css" rel='stylesheet'>
+                <link href="stylesheets/main.css" rel="stylesheet">
 	<title>Home Safely</title>
 </head>
 <body>
+<div class="col-md-6 col-md-offset-3">
+<div class="panel panel-default">
+<div class="panel-body" >
 	<h1>Home Safely</h1>
 	<h2>Let your loved ones know you're safe!</h2>
+    <br/>
+    <br/>
+    <div class="text-left">
 <form action="http://localhost:3000/users"
 method="post"
 target="hidden_iframe" onsubmit="submitted=true;">
             <label for="Name">Name</label>
             <input id="Name" type="text" name="name" size="40" placeholder="Enter your Name">
         <br />
+        <br />
     		<label for="Username">Username</label>
     		<input id="Username" type="text" name="username" size="40" placeholder="Enter your email address">
+            <br />
 		<br />
     		<label for="Password">Password</label>
     		<input id="Password" type="text" name="password" size="40" placeholder="Enter your password">
         <br />
+        <br />
             <label for="Confirm Password">Confirm Password</label>
             <input id="Confirm Password" type="text" name="password_2" size="40" placeholder="Confirm your password">
+        </div>
     <div class="col-sm-offset-2 col-sm-10">
             <Input type="Submit" class="btn btn-default" value="Submit">
     </div>
+</div>
+</div>
+</div>
 </form>
 </body>
